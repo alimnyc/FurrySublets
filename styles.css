@@ -83,10 +83,10 @@ div.left{
 }
 
 .selection{
-	height:400px;
 	display: inline-block;
 	float:left;
 	border: 2px solid black;
+	width: 1000px;
 }
 
 
