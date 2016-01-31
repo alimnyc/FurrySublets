@@ -142,4 +142,13 @@ div.column2{
 }
 .bottom img{
 	width: 150px;
+	height: 150px;
 }
+
+.selection{
+	height:400px;
+	display: inline-block;
+	float:left;
+	border: 2px solid black;
+}
+
