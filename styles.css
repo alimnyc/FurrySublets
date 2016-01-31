@@ -1,3 +1,7 @@
+body {
+	margin: 0;
+}
+
 body.landing{
 	background: url("images/fur.jpg") no-repeat center center fixed; 
 	text-align: center;
@@ -5,7 +9,7 @@ body.landing{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+ }
 .landing h1{
 	font-size: 4em;
 	font-family: 'Shadows Into Light', cursive;
@@ -31,7 +35,50 @@ body.landing{
 .landing a:hover{
 	color: red;
 }
+main {
+	background-color: rgba(0,0,0,0.5);
+	margin: 150px auto 0 auto;
+	max-width: 70%;
+	padding: 25px;
+	border-radius: 25px;
+}
+.about {
+	background: url("images/dark_embroidery.png") no-repeat center center fixed; 
+	text-align: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ }
+.about .simon {
+  /*float: right;*/
+  display: inline-block;
 
+  width: 30%;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+.about .simon h1{
+	font-size: 250%;
+	color: white;
+}
+.about .simon p {
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  font-size: 120%;
+  color: white;
+
+}
+#AboutParagraph{
+	/*width: 75%;*/
+	margin-left: 20%;
+	margin-right: 20%;
+	color: white;
+	font-size: 125%;
+}
 li{
 	text-decoration: none;
 	display: inline-block;
@@ -39,12 +86,32 @@ li{
 }
 
 nav{
-	float: left;
+	position:absolute;
+	left:0px;
+	top:0px;
+	right:0;
+	height:110px;
 }
-
-
-
-
+nav ul{
+	list-style-type: none;
+	text-align: center;
+	display:block;
+}
+nav ul li{
+	display: inline-block;
+	width:100px;
+	height:100px;
+	background-image: url(images/paw.png);
+	background-size: contain;
+}
+nav ul li a{
+	display: block;
+	margin-top: 50%;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow:1px 1px 3px black, 1px -1px 3px black, -1px 1px 3px black, -1px -1px 3px black;
+}
 .index {
 	background: url("images/Fur1.jpg") no-repeat center center fixed; 
 	text-align: center;
@@ -67,15 +134,11 @@ nav{
 }
 .bottom {
 	display: inline-block;
-	float: left;
 }
-div.right{
+div.column2{
 	width: 49%;
 	display: inline-block;
-}
-div.left{
-	width: 49%;
-	display: inline-block;
+	vertical-align: top;
 }
 .bottom img{
 	width: 150px;
@@ -88,5 +151,4 @@ div.left{
 	float:left;
 	border: 2px solid black;
 }
-
 
